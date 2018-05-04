@@ -8,7 +8,7 @@ import time
 
 max_steps = 3000
 batch_size = 128
-data_dir = ''
+data_dir =  '/tmp/cifar10_data/cifar-10-batches-bin'
 
 def variable_with_wight_loss(shape,stddev,wl):
     var = tf.Variable(yf.truncated_normal(shape,stddev=stddev))
@@ -18,3 +18,4 @@ def variable_with_wight_loss(shape,stddev,wl):
         tf.add_to_collection('losses',weight_loss)
     return var
 
+image
