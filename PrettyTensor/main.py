@@ -40,7 +40,10 @@ def plot_images(images,cls_true,cls_pred=None):
 
     #create figure with 3*3 sub-plots.
     fig,axes = plt.subplots(3,3)
-    fig.subplots_adjust()
+    fig.subplots_adjust(hspace=0.3,wspace=0.3)
+
+    for i,ax in enumerate(axes.flat):
+        #Plot image.
 
 
 
