@@ -41,3 +41,6 @@ def plot_images(images,cls_true,cls_pred=None):
     #create figure with 3*3 sub-plots.
     fig,axes = plt.subplots(3,3)
     fig.subplots_adjust()
+
+
+
